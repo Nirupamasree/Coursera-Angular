@@ -35,7 +35,7 @@
      <h2>To Buy:</h2>
      <ol>
          <li ng-repeat="item in tobuy.items">
-           Buy {{ item.quantity }} {{ item.name }}
+           Buy {{ item.quantity }}  {{ item.name }}
            <button ng-click="tobuy.removeItem($index);">Bought</button>
          </li>
        </ol>
