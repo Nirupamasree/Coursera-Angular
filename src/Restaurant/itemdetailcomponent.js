@@ -3,7 +3,7 @@
 debugger;
 angular.module('MenuApp')
 .component('itemDetail', {
-  templateUrl: 'src/Restaurant/templates/itemdetaillistTemplate.html',
+  templateUrl: 'src/Restaurant/templates/ItemdetaillistTemplate.html',
   bindings: {
     items: '<'
   }
