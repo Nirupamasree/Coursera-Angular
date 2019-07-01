@@ -1,0 +1,14 @@
+<div ng-show=$ctrl.data.data.short_name class="center" >
+<p>Firstname:<label class="info">{{$ctrl.data.First}}</label></p>
+<p>Last Name:<label class="info">{{$ctrl.data.Last}}</label></p>
+<p>email:<label class="info">{{$ctrl.data.email}}</label></p>
+<p>Phone #:<label class="info">{{$ctrl.data.phn}}</label></p>
+<p>Favorite Menu Item:<label >{{$ctrl.data.data.name}}</label></p>
+<p>Menu Item Description:<label> {{$ctrl.data.data.description}}</label></p>
+<div>{{$ctrl.data.data.short_name}}</div>
+<img class="img-responsive" width="250" height="150" ng-src="{{$ctrl.basePath}}/images/{{$ctrl.data.data.short_name}}.jpg" alt="{{$ctrl.data.data.name}}">
+</div>
+  </div>
+  <div ng-hide =$ctrl.data.data.short_name>
+<span>Not Signed Up Yet </span> <a ui-sref="public.SignUp"><span>Sign up Now! </span> </a>
+</div>
